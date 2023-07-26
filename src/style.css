@@ -1,0 +1,79 @@
+/* Reset some default browser styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Set full height for the root container */
+#root {
+  height: 100vh;
+}
+
+/* Styles for the header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styles for the sidebar */
+aside {
+  background-color: #f0f0f0;
+  width: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for the map container */
+main {
+  flex: 1;
+  position: relative;
+}
+
+/* Styles for the map itself (assuming you're using react-leaflet) */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+/* Styles for the footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Additional styles for the region info card */
+.region-info-card {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* Night mode styles (for bonus) */
+.night-mode {
+  background-color: #111;
+  color: white;
+}
+
+/* Additional styles for buttons, forms, etc. */
+/* You can customize these styles based on the Ant.Design components you use */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add more styles as needed */
