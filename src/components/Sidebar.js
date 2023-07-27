@@ -19,7 +19,7 @@ const Sidebar = () => {
   return (
     <Sider collapsible collapsed={collapsed} onCollapse={toggleCollapsed}>
       <div style={{ height: '32px', margin: '16px', color: '#fff' }}>
-        {/* Your logo or app title goes here */}
+        
         {collapsed ? <span>Logo</span> : <span>My App</span>}
       </div>
       <Menu theme="dark" mode="inline" defaultSelectedKeys={['home']}>

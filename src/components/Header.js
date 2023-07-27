@@ -10,21 +10,21 @@ const HeaderSection = () => {
   const [userDetails, setUserDetails] = useState(null);
 
   const handleLogin = () => {
-    // Check if the user details are stored in localStorage (Signup details)
+    // Check if the user details are stored in local
     const storedUserDetails = JSON.parse(localStorage.getItem('userDetails'));
 
     if (storedUserDetails) {
-      // Simulate login by checking the stored signup details
+      // login by checking the stored signup details
       const { username, password } = storedUserDetails;
 
-      // Get user input for username and password (Not secure, for demonstration purposes only)
+      // Get user input for username and password 
       const inputUsername = prompt('Enter your username:');
       const inputPassword = prompt('Enter your password:');
 
       if (inputUsername === username && inputPassword === password) {
         setIsAuthenticated(true);
         setUserDetails(storedUserDetails);
-        setProfileModalOpen(false); // Close the profile modal after successful login
+        setProfileModalOpen(false); 
       } else {
         alert('Invalid username or password. Please try again.');
       }
@@ -39,11 +39,12 @@ const HeaderSection = () => {
   };
 
   const handleProfileClick = () => {
-    // Open the profile modal only if the user is authenticated
+    // Open the profile only if the user is authenticated
     if (isAuthenticated) {
       setProfileModalOpen(true);
     } else {
-      handleLogin(); // If not authenticated, show login prompt first
+      handleLogin(); 
+      // If not authenticated, show login prompt first
     }
   };
 
@@ -56,11 +57,10 @@ const HeaderSection = () => {
   };
 
   const handleSignup = (values) => {
-    // Implement your user registration logic here
-    // For demonstration purposes, we'll store the user details in localStorage
+   
 
     const { name, address, password } = values;
-    const username = name.toLowerCase().replace(/\s+/g, ''); // Generate a simple username based on name
+    const username = name.toLowerCase().replace(/\s+/g, ''); 
 
     const userDetails = {
       name,
@@ -71,7 +71,7 @@ const HeaderSection = () => {
 
     localStorage.setItem('userDetails', JSON.stringify(userDetails));
 
-    // Close the signup modal and log the user in automatically
+    // Close the signup  and log the user in automatically
     setSignupModalOpen(false);
     setIsAuthenticated(true);
     setUserDetails(userDetails);
@@ -117,7 +117,7 @@ const HeaderSection = () => {
   return (
     <Header style={{ background: '#f0f2f5', padding: '0 16px', display: 'flex', alignItems: 'center' }}>
       <div style={{ flex: 1, fontSize: '50px', fontWeight: 'bold', color: '#1890ff' }}>
-        {/* Your app logo or title goes here */}
+       
         Map Login 
       </div>
       <div style={{ display: 'flex', alignItems: 'center' }}>

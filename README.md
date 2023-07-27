@@ -1,3 +1,23 @@
+# about map application
+
+The Map Application is a simple web application that allows users to view and interact with maps of different regions. It provides information about selected regions, such as the United States, India, and the United Kingdom, including their currency, speed unit, distance unit, volume unit, and timezone.
+
+1. Region Selection: Users can select a region from a dropdown menu to view its corresponding map and region information.
+
+2. Map View: The application displays the selected region's map using the Leaflet library, centered on the region's coordinates, and with an appropriate zoom level.
+
+3. Region Information: Alongside the map, the application presents relevant information about the selected region, including its name, currency, speed unit, distance unit, volume unit, and timezone.
+
+4. Authentication and Profile: The application allows users to sign up and log in to access their profile information, including their name and address.
+
+5. The application uses React and Redux to manage state and provide a smooth user experience.
+
+6. ESLint with the Airbnb style guide is used to maintain code quality and adhere to best practices.
+
+7. The application is designed to be responsive and mobile-friendly.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

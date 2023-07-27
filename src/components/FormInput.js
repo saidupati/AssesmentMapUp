@@ -14,8 +14,8 @@ const FormInput = () => {
   };
 
   const handleLoadButtonClick = () => {
-    // Simulate loading region data for the selected region (replace with API call)
-    const regionData = getRegionData(selectedRegion); // Replace this with your data fetching logic
+    // loading region data for the selected region
+    const regionData = getRegionData(selectedRegion); 
 
     if (regionData) {
       dispatch(loadRegionData(regionData));
